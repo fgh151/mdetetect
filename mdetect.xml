@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" method="upgrade" type="plugin" group="system">
+	<name>plg_system_mdetect</name>
+	<author></author>
+	<creationDate>2015 september 23</creationDate>
+	<copyright></copyright>
+	<license></license>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_MDETECT_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="mdetect">mdetect.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="ru-RU">ru-RU.plg_system_mdetect.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="site_style" type="templatestyle"
+					   client="site"
+					   description="COM_ADMIN_USER_FIELD_BACKEND_TEMPLATE_DESC"
+					   label="COM_ADMIN_USER_FIELD_BACKEND_TEMPLATE_LABEL" >
+					<option value="">JOPTION_USE_DEFAULT</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
